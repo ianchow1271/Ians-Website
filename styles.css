@@ -1,0 +1,230 @@
+  /* Reset some default styles */
+body, h1, h2, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1470' height='6000' preserveAspectRatio='none' viewBox='0 0 1470 6000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1578%26quot%3b)' fill='none'%3e%3crect width='1470' height='6000' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1579%26quot%3b)'%3e%3c/rect%3e%3cpath d='M1470 0L975.6800000000001 0L1470 650.91z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M975.6800000000001 0L1470 650.91L1470 2950.97L453.35 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M453.3499999999999 0L1470 2950.97L1470 3975.6L255.6699999999999 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M255.66999999999985 0L1470 3975.6L1470 5226.95L157.22999999999985 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 6000L301.72 6000L0 3502.1z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 3502.1L301.72 6000L924.97 6000L0 1618.09z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 1618.0900000000001L924.97 6000L1187.76 6000L0 801.1600000000002z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 801.1599999999999L1187.76 6000L1282.34 6000L0 256.3399999999998z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1578'%3e%3crect width='1470' height='6000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='-77.04%25' y1='18.88%25' x2='177.04%25' y2='81.13%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1579'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(101%2c 160%2c 255%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+  color: #fff;
+}
+
+.content {
+  margin-left: 220px; /* Adjust this value to leave space for the sidebar */
+  padding: 40px;
+}
+
+/* Sidebar navigation */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='1200' preserveAspectRatio='none' viewBox='0 0 1440 1200'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1227%26quot%3b)' fill='none'%3e%3crect width='1440' height='1200' x='0' y='0' fill='rgba(20%2c 42%2c 64%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c627 C 96%2c615.8 288%2c571.6 480%2c571 C 672%2c570.4 768%2c736.6 960%2c624 C 1152%2c511.4 1344%2c131.2 1440%2c8L1440 1200L0 1200z' fill='rgba(15%2c 33%2c 50%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1227'%3e%3crect width='1440' height='1200' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.profile {
+  width: 150px; /* Container width */
+  height: 150px; /* Container height */
+  border-radius: 50%; /* Rounded container */
+  overflow: hidden; /* Hide any overflow */
+  margin: 40px 10px 15px 50px;
+}
+
+.profile img {
+  width: 165px; /* Image fills the container */
+  height: 360px; /* Image fills the container */
+  object-fit: cover;
+  transform: scale(2.5);
+}
+
+
+.nav-links li {
+  display: grid; 
+  grid-template-rows: 4rem;
+  text-align: center; 
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+li:hover a{
+  color: #3091eb;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+}
+
+
+.person-content .person-title {
+  font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 5px;
+  font-weight: 600
+  
+}
+
+.person-content .person-subtitle {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  padding-bottom: 80px;
+  text-transform: uppercase
+}
+
+/* Main content */
+.content {
+  margin-left: 300px;
+  padding: 40px;
+}
+
+header {
+  margin-left: 220px;
+  padding: 40px;
+}
+
+.languages {
+  margin-left: 220px;
+  padding: 40px;
+}
+
+.language-icons img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* About section styles */
+.about-section {
+  padding: 130px 0px 300px 40px;
+  margin-top: 20px;
+} 
+
+.about-section p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  line-height: 2.0;
+}
+
+.about-section div{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+}
+
+/* Add your desired styling here */
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1090px;
+  margin: 30px auto;
+}
+
+.experience-maintitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5em;
+}
+
+.experience-title {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.3em;
+  margin: 0px 0px -10px 0px;
+  padding: 15px 0px;
+}
+
+.experience-time {
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
+  font-style: italic;
+  padding-top: -10px;
+  color: #ffffff;
+}
+
+.experience-description {
+  font-family: 'Raleway', sans-serif;
+  font-size: smaller;
+  margin-top: 10px;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  margin: 0;
+}
+
+.skills-maintitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.5em;
+  padding-top: 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Make sure the row spans the full width */
+}
+
+.logo { 
+  filter: grayscale(100%);
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  text-align: center;
+}
+
+img {
+  /* max-width: 100%; */
+  height: auto;
+  /* width: 100%; Ensure all images have the same width */
+}
+
+.kotlin-logo{
+  clip-path: inset(0px 0px 0px 100px);
+  filter: grayscale(100%);
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  padding-right: 40px;
+  text-align: center;
+}
+
+.contact-maintitle {
+  font-family: 'Raleway', sans-serif;
+  font-size: 3em;
+  padding-top: 80px;
+}
+
+.contact-section{
+  padding-bottom: 350px;
+}
+
+.contact-description{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.1em;
+  padding: 20px 0px
+}
+
+span{
+  margin-left: 6em;
+}
+
+a{
+  color: #fff;
+}
+
+
+
+
+  
